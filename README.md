@@ -3,6 +3,8 @@ PHP and Python script to auto install WordPress.
 </br>
 The script download WordPress and install with data from form.
 </br>
+Copy and run in your browser only index.php
+</br>
 
 # Warning & Specification
 Python-2x
