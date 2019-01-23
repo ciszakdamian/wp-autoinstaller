@@ -1,5 +1,5 @@
 # wp-autoinstaller
-PHP and Python scripts to auto install WordPress. 
+PHP with Python scripts to auto install WordPress. 
 </br>
 The script download WordPress and install with data from form.
 </br>
