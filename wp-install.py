@@ -27,8 +27,8 @@ wp_email = conf[10]
 os.mkdir(wp_dir)
 os.chdir(wp_dir)
 
-os.system("wp --allow-root core download --locale=\""+wp_locale+"\"")
-os.system("wp --allow-root core config --dbname=\""+wp_dbname+"\" --dbuser=\""+wp_dbuser+"\" --dbpass=\""+wp_dbpass+"\" --dbhost=\""+wp_dbhost+"\" --dbprefix=\"wp_\"")
+os.system("wp-cli core download --locale=\""+wp_locale+"\"")
+os.system("wp-cli core config --dbname=\""+wp_dbname+"\" --dbuser=\""+wp_dbuser+"\" --dbpass=\""+wp_dbpass+"\" --dbhost=\""+wp_dbhost+"\" --dbprefix=\"wp_\"")
 
 if int(check_conf) == 1:
-    os.system("wp --allow-root core install --url=\""+wp_url+"\" --title=\""+wp_title+"\" --admin_user=\""+wp_admin+"\" --admin_password=\""+wp_pass+"\" --admin_email=\""+wp_email+"\"")
+    os.system("wp-cli core install --url=\""+wp_url+"\" --title=\""+wp_title+"\" --admin_user=\""+wp_admin+"\" --admin_password=\""+wp_pass+"\" --admin_email=\""+wp_email+"\"")
